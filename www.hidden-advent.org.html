@@ -1,5 +1,23 @@
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div class="line-gutter-backdrop"></div><table><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><span class="html-doctype">&lt;!DOCTYPE html&gt;</span>
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/isRockFx.js"></script>
+    <script>
+        $(function () {
+            $('#ButtonCal').click(
+                function () {
+                    //取得用戶輸入的參數
+                    var para = { 'height': $('#txbHeight').val(), 'weight': $('#txbWeight').val() };
+                    //呼叫API
+                    ExecuteAPI('Example', 'BMI', para,
+			//呼叫WebAPI成功時運行的Call Back Function
+                        function (result) {
+                            alert(result.Data);<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div class="line-gutter-backdrop"></div><table><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><span class="html-doctype">&lt;!DOCTYPE html&gt;</span>
 </td></tr><tr><td class="line-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;html <span class="html-attribute-name">lang</span>="<span class="html-attribute-value">zh-CN</span>"&gt;</span>
 </td></tr><tr><td class="line-number" value="3"></td><td class="line-content"><span class="html-tag">&lt;head&gt;</span>
 </td></tr><tr><td class="line-number" value="4"></td><td class="line-content">    <span class="html-tag">&lt;title&gt;</span>全能神教会<span class="html-tag">&lt;/title&gt;</span>
@@ -1520,3 +1538,36 @@
 </td></tr><tr><td class="line-number" value="1806"></td><td class="line-content">
 </td></tr><tr><td class="line-number" value="1807"></td><td class="line-content"><span class="html-tag">&lt;/script&gt;</span>
 </td></tr><tr><td class="line-number" value="1808"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="1809"></td><td class="line-content"><span class="html-tag">&lt;script <span class="html-attribute-name">type</span>="<span class="html-attribute-value">text/javascript</span>"&gt;</span></td></tr><tr><td class="line-number" value="1810"></td><td class="line-content">/* &lt;![CDATA[ */</td></tr><tr><td class="line-number" value="1811"></td><td class="line-content">var gospelAjax = {"ajaxurl":"https:\/\/www.hidden-advent.org\/wp-admin\/admin-ajax.php","security":"cad28fb219"};</td></tr><tr><td class="line-number" value="1812"></td><td class="line-content">/* ]]&gt; */</td></tr><tr><td class="line-number" value="1813"></td><td class="line-content"><span class="html-tag">&lt;/script&gt;</span></td></tr><tr><td class="line-number" value="1814"></td><td class="line-content"><span class="html-comment">&lt;!-- 全站广告 --&gt;</span></td></tr><tr><td class="line-number" value="1815"></td><td class="line-content"><span class="html-tag">&lt;script <span class="html-attribute-name">defer</span> <span class="html-attribute-name">src</span>="<a class="html-attribute-value html-resource-link" target="_blank" href="https://centereu.kingdomsalvation.org/cdn/v3/common/commercial/commercial.min.js?v=1599923502" rel="noreferrer noopener">https://centereu.kingdomsalvation.org/cdn/v3/common/commercial/commercial.min.js?v=1599923502</a>"&gt;</span><span class="html-tag">&lt;/script&gt;</span></td></tr><tr><td class="line-number" value="1816"></td><td class="line-content"><span class="html-tag">&lt;script <span class="html-attribute-name">src</span>="<a class="html-attribute-value html-resource-link" target="_blank" href="https://centereu.kingdomsalvation.org/cdn/v3/official/page-front/page-front.min.js?v=202008310.0.1" rel="noreferrer noopener">https://centereu.kingdomsalvation.org/cdn/v3/official/page-front/page-front.min.js?v=202008310.0.1</a>"&gt;</span><span class="html-tag">&lt;/script&gt;</span></td></tr><tr><td class="line-number" value="1817"></td><td class="line-content"><span class="html-tag">&lt;script <span class="html-attribute-name">type</span>='<span class="html-attribute-value">text/javascript</span>' <span class="html-attribute-name">src</span>='<a class="html-attribute-value html-resource-link" target="_blank" href="https://stats.wp.com/e-202039.js" rel="noreferrer noopener">https://stats.wp.com/e-202039.js</a>' <span class="html-attribute-name">async</span>='<span class="html-attribute-value">async</span>' <span class="html-attribute-name">defer</span>='<span class="html-attribute-value">defer</span>'&gt;</span><span class="html-tag">&lt;/script&gt;</span></td></tr><tr><td class="line-number" value="1818"></td><td class="line-content"><span class="html-tag">&lt;script <span class="html-attribute-name">type</span>='<span class="html-attribute-value">text/javascript</span>'&gt;</span></td></tr><tr><td class="line-number" value="1819"></td><td class="line-content">	_stq = window._stq || [];</td></tr><tr><td class="line-number" value="1820"></td><td class="line-content">	_stq.push([ 'view', {v:'ext',j:'1:8.5',blog:'182402306',post:'8',tz:'8',srv:'www.hidden-advent.org'} ]);</td></tr><tr><td class="line-number" value="1821"></td><td class="line-content">	_stq.push([ 'clickTrackerInit', '182402306', '8' ]);</td></tr><tr><td class="line-number" value="1822"></td><td class="line-content"><span class="html-tag">&lt;/script&gt;</span></td></tr><tr><td class="line-number" value="1823"></td><td class="line-content"><span class="html-tag">&lt;/body&gt;</span></td></tr><tr><td class="line-number" value="1824"></td><td class="line-content"><span class="html-tag">&lt;/html&gt;</span><span class="html-end-of-file"></span></td></tr></tbody></table></body></html>
+<script>
+        $(function () {
+            $('#ButtonCal').click(
+                function () {
+                    //取得用戶輸入的參數
+                    var para = { 'height': $('#txbHeight').val(), 'weight': $('#txbWeight').val() };
+                    //呼叫API
+                    ExecuteAPI('Example', 'BMI', para,
+			//呼叫WebAPI成功時運行的Call Back Function
+                        function (result) {
+                            alert(result.Data);
+                        }
+                        );
+                }
+                );
+        });
+    </script>
+</head>
+<body>
+    <div class="row" style="margin:10px">
+        <div class="col-md-12">
+            <div class="form-group">
+                身高:
+                <input id="txbHeight" class="form-control" placeholder="請輸入身高" />
+                體重:
+                <input id="txbWeight" class="form-control" placeholder="請輸入體重" />
+                <br />
+                <button class="btn btn-primary" id="ButtonCal">計算</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
